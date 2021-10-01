@@ -1,0 +1,3 @@
+My Ascii Game Adventure
+use #load playmyasciigameadventure to play!
+use #load exitmyasciigameanventure to exit!

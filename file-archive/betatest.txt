@@ -1,0 +1,4 @@
+,dudebotbeta mute e(admin) 5s
+09:14
+e(admin)
+e(admin has been muted by DudeBot v4 [#] for 5 seconds
