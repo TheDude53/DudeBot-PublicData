@@ -1,0 +1,1 @@
+Turbo Mode is a feature in Scratch that runs code as fast as possible. To activate it, hold ⇧ Shift and click the green flag.

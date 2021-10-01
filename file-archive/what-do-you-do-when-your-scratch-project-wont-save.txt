@@ -1,0 +1,1 @@
+If a project doesn't successfully save, a window will appear, notifying the user that the project could not be saved. In the window, the user can choose to re-attempt to save the project by clicking 'Try Again', or choose to download the project as a file by clicking 'download'.
