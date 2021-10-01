@@ -1,0 +1,1 @@
+<arg> is <chance|0|100>% fire

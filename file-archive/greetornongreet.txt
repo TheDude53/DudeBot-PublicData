@@ -1,0 +1,1 @@
+replace<switch|arg> |Greet|You greeted|YOu did'nt greet anyone wtf
