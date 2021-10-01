@@ -1,0 +1,31 @@
+A problem has been detected n' Windows has been shut down ta prevent damage ta yo' computer.
+
+Da problem seems ta be caused by tha followin file: csrss.exe
+
+CRITICAL_PROCESS_DIED
+
+If dis is tha last time you've peeped dis error screen,
+restart yo' computer n' shit. If dis screen happens again, follow
+these steps:
+
+Peep ta make shizzle any freshly smoked up hardware or software is properly installed.
+If dis be a freshly smoked up installation, ask yo' hardware or software manufacturer
+for any Windows thugged-out shiznit you might need.
+
+If problems continue, disable or remove any newly installed hardware
+or software. disable BIOS memory options like fuckin cachin or shadowing.
+If you need ta use safe mode ta remove or disable components, restart
+your computer, press F8 ta select Advanced Startup Options, n' then
+select Safe Mode.
+
+Technical Information:
+
+*** STOP: 0x00000019 (0x00000020, 0xe150ce50, 0xe150ce70, 0x0c040201)
+
+*** csrss.exe - Address 0xfa1e64ae base at 0xe6f80aee DateStamp 0xf4a681de
+
+
+Collectin data fo' crash dump...
+Initializin disk fo' crash dump...
+Beginnin dump of physical memory.
+Dumpin physical memory ta disk: 
