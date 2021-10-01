@@ -1,0 +1,3 @@
+Node.js v15.14.0 for linux
+CPU: x64 @‌ 2.494GHz
+Memory: 83MB‌/271MB used

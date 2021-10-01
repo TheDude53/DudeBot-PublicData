@@ -1,0 +1,5 @@
+Stock Help:
+#stock <stock symbol>
+#findstock <stock query>
+
+qt counter by just a cat
