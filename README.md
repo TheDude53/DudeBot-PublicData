@@ -1,6 +1,8 @@
 # DudeBot-PublicData
 Official repository for DudeBot's crowd-sourced data
 
+Looking for the file archive? [Click here.](./file-archive/README.md)
+
 ## Contributing
 
 Before contributing, please first read [the contribution guidelines](./CONTRIBUTING.md).
