@@ -1,0 +1,41 @@
+HELLO AND WELCOME TO A NEW VERSION! 
+Draco has been almost entirely rewritten to be faster, less spammy, and more useful.
+Current version: 2.1.1
+ 
+Update log:
+-Bug Fixes
++Added dr!say
++Added a better security system to prevent intentional crashing of the bot
+ 
+Draco's help box:
+ 
+====Commands for all==== (prefix is dr!)
+pet - Pet draco
+hug {name} - Hug someone!
+kiss {name} - Kiss someone!
+nuzzle {name} - Nuzzle someone!
+stab {name} - stab someone you don't like!
+bap {name} - Bap someone!
+pat {name} - pat someone on their head!
+rolldie - rolls a 20 sided die
+coinflip - Flips a coin
+help - gets you the help page
+bored - Gives you activity ideas if you are bored
+insideofwyvern - check the status of wyvern's belly yes
+suggest - Give me feedback and maybe even have a command added!
+say {anything} - Make Draco say something, use common sense though, as !suggest can be used as a report feature and I can and will ban your ass if I catch you being overtly racist with it.
+ 
+====VIP Commands===
+//none added
+ 
+====Commands for me only (bot owner)====
+Vore/puke/Digest {name} - Eats people etc
+dr!ban - Dont make me do this to you, its not gonna be fun.
+dr!unban - If the above happened to you you can appeal, but if you fuck it up and get banned again its permanent and without appeal
+Shutdown - does what you think it does
+ 
+====Misc Interations====
+//none so far
+ 
+====Additional info====
+wow you even read this far? nice, anyways its good to see people care about the bot. I take suggestions and would love to hear your ideas for commands :3 -Flawed#8230 (my Dis‍cord)
