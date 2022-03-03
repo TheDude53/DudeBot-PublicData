@@ -1,0 +1,19 @@
+{
+  "name": "dudebot-labs-clicker",
+  "version": "1.0.0",
+  "description": "You click the button and the number goes up. Fun!",
+  "homepage": "https://dudebot-official.glitch.me/#/labs-home",
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "TheDude53/DudeBot Labs",
+    "email": "dudebot@cyberdude.com",
+    "url": "https://dudebot-official.glitch.me/#/labs-home"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.5.0"
+  },
+  "private": true
+}

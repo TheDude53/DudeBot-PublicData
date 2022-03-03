@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@cds/city/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
+    <style>
+      * {
+        font-family: "Clarity City", sans-serif;
+      }
+      body {
+        margin: 1em;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+      }
+      body:first-child {
+        margin-top: 0;
+      }
+      button {
+        margin: 1em auto 2em auto;
+        display: block;
+        background-color: #1877f3;
+        color: #ffffff;
+        border: 0;
+        padding: 1em 2em;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:focus {
+        outline: none;
+      }
+      p {
+        line-height: 1.5em;
+      }
+      #credit {
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
+      }
+      #credit a {
+        display: inline-block;
+        margin-top: 0.25em;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+    <title>Number go brrr - DudeBot Labs</title>
+  </head>
+  <body>
+    <h1>Number go brrr</h1>
+    <b id="clicks">Clicks: 0</b>
+    <button id="clicker">Click me</button>
+    <p>This is a button. You click the button and the number goes up.<br>The goal? Make the number bigger.<br>Have fun!</p>
+    <span id="credit">Made by the geniuses at<br><a href="https://dudebot-official.glitch.me/#/labs/home" target="_blank">DudeBot Labs</a></span>
+    
+    <script>
+      (()=>{
+        let clicks = 0;
+        const clickcount = document.getElementById("clicks");
+        clickcount.update = ()=>{
+          // Thanks StackOverflow
+          clickcount.innerHTML = "Clicks: " + clicks.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        };
+        const ws = new WebSocket((location.protocol === "https:" ? "wss:" : "ws:") + "//" + location.host);
+        ws.onclose = ()=>{
+          clickcount.innerHTML = "Error: Connection lost. Please reload the page.";
+        };
+        ws.onmessage = async (d)=>{
+          const data = JSON.parse(await d.data.text());
+          if (data[0] === 0) {
+            clicks = data[1];
+            clickcount.update();
+          } else if (data[0] === 1) {
+            clicks++;
+            clickcount.update();
+          };
+        };
+        ws.onopen = ()=>{
+          ws.send(0);
+          setInterval(()=>{
+            ws.send(0);
+          }, 15000);
+        };
+        document.getElementById("clicker").onclick = ()=>{
+          ws.send(1);
+        };
+      })();
+    </script>
+  </body>
+</html>
