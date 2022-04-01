@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@cds/city/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
+    <style>
+      * {
+        font-family: "Clarity City", sans-serif;
+      }
+      body {
+        margin: 1em;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+      }
+      body:first-child {
+        margin-top: 0;
+      }
+      textarea {
+        border: none;
+        background-color: #ffffff;
+        color: #000000;
+        outline: none;
+        font-family: monospace;
+        height: 8em;
+        width: 75%
+      }
+      button {
+        margin: 1em auto 2em auto;
+        display: block;
+        background-color: #1877f3;
+        color: #ffffff;
+        border: 0;
+        padding: 1em 2em;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:focus {
+        outline: none;
+      }
+      p {
+        line-height: 1.5em;
+      }
+      #credit {
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
+        backgroud-color: #000000;
+      }
+      #credit a {
+        display: inline-block;
+        margin-top: 0.25em;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+    <title>Number go brrr - DudeBot Labs</title>
+  </head>
+  <body>
+    <h1>DBSQ Tester</h1>
+    <textarea id="dbsq" placeholder="Paste your DBSQ script here"></textarea>
+    <button>Test script</button>
+    <div id="output"></div>
+    <span id="credit">April fools!<br><a href="https://dudebot-official.glitch.me/#/mms/home" target="_blank">DudeBot Multimedia Studios</a></span>
+    
+    <script>
+      (()=>{
+        let timeouts = [];
+        document.querySelector("button").onclick = ()=>{
+          // Clear running script instructions
+          timeouts.forEach((t)=>{
+            clearTimeout(t);
+          });
+          timeouts.splice(0, timeouts.length);
+          
+          // and the output
+          const output = document.getElementById("output");
+          output.innerHTML = "";
+          // o makes things easier
+          function o(text) {
+            output.innerHTML += text;
+          };
+          
+          const dbsq = document.getElementById("dbsq").value.replace(/\r\n/g, "\n").split("\n");
+          
+          // Parsing time!
+          if (dbsq[0] !== "DBSQ0") {
+            o("Error: Invalid header.");
+            return;
+          };
+          
+          try {
+            dbsq[1] = JSON.parse(dbsq[1] || "");
+          } catch {
+            o("Error: Invalid JSON metadata.");
+            return;
+          };
+          o(
+            "Title: " + (dbsq[1].title || "none specified").replace(/[\r\n]/g, " ") + 
+            "<br>Description: " + (dbsq[1].description || "none specified").replace(/\r?\n/g, "<br>") + 
+            "<br>Scripted by: " + (dbsq[1].scriptwriter || "none specified").replace(/[\r\n]/g, " ") + "<br><br>"
+          );
+          
+          dbsq.slice(2).forEach((line)=>{
+            // Get those comments out of here
+            if (!/^[0-9]+, .*$/.test(line)) {
+              return;
+            };
+            
+            line = line.split(", ");
+            timeouts.push(
+              setTimeout(()=>{
+                o(line.slice(1).join(", ") + "<br>");
+              }, parseInt(line[0]))
+            );
+          });
+          
+        };
+      })();
+    </script>
+  </body>
+</html>
