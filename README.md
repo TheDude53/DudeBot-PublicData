@@ -3,7 +3,7 @@ Official repository for DudeBot's crowd-sourced data
 
 Looking for the file archive? [Click here.](./file-archive/README.md)
 
-DBSQ stuff is located in the [`DBSQ` folder](./DBSQ).
+DBSQ stuff is located in the [`dbsq` folder](./dbsq).
 
 ## Contributing
 
