@@ -113,7 +113,9 @@
             line = line.split(", ");
             timeouts.push(
               setTimeout(()=>{
-                o(line.slice(1).join(", ") + "<br>");
+                o(line.slice(1).join(", ").replace(/\\n/g, "<br>").replace(/\\r/g, "").replace(/\\u{([0-9A-Z]+)}/gi, (char)=>{
+                  return String.fromCharCode(parseInt(char.slice(3, -1), 16));
+                }) + "<br>");
               }, parseInt(line[0]))
             );
           });
