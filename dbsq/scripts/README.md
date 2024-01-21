@@ -1,2 +1,2 @@
 # Public DBSQ scripts
-This folder hosts our growing collection of DBSQ scripts. At some point we plan to merge them into one giant `#song` command. Probably.
+This folder hosts our growing collection of DBSQ scripts. You can find them all playable on DudeBot's `#song` command. Some of them even have synced audio!
