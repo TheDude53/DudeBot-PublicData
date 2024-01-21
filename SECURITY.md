@@ -1,3 +1,3 @@
 # Security Policy
 
-Security issues shouldn't be possible; it's all just JSON arrays. In the event of a security issue, please DM [@jh2062 on Twitter](https://twitter.com/jh2062), [or u/TDude53 on Reddit](https://www.reddit.com/user/TDude53).
+Security issues likely aren't possible given the nature of this repository; it's mostly JSON arrays and simplistic JavaScript code. In the event of a security issue, please [contact us at our website](https://dudebot-official.glitch.me/#/contact) as soon as possible.
