@@ -17,6 +17,8 @@ Have a roast? Submit a pull request to [`roasts.json`](./roasts.json).
 
 Want to help develop an AI? Submit a pull request to [`ai.json`](./ai.json).
 
+Have a custom Discord status? Check the contribution guidelines, then submit a pull request to [`statuses.json`](./statuses.json).
+
 ## Third-party usage
 
 This repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/), and can be used under it's terms.
