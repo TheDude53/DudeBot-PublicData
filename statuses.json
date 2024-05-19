@@ -1,4 +1,5 @@
 [
+  ["online", {"type": 3, "name": "for # or !#", "state": "Prepare to meet the only chatbot you'll ever need."}],
   ["online", {"type": 3, "name": "for your status suggestions", "state": "https://github.com/TheDude53/DudeBot-PublicData/blob/master/statuses.json"}],
   ["online", {"type": 1, "name": "a cool video", "state": "DudeBot v5 promo", "url": "https://www.youtube.com/watch?v=cxUovC8DSQ8"}],
   ["dnd", {"type": 5, "name": "some epic contest", "state": "It's pretty cool"}]
