@@ -2,5 +2,13 @@
   ["online", {"type": 3, "name": "for # or !#", "state": "Prepare to meet the only chatbot you'll ever need."}],
   ["online", {"type": 3, "name": "for your status suggestions", "state": "https://github.com/TheDude53/DudeBot-PublicData/blob/master/statuses.json"}],
   ["online", {"type": 1, "name": "a cool video", "state": "DudeBot v5 promo", "url": "https://www.youtube.com/watch?v=cxUovC8DSQ8"}],
-  ["dnd", {"type": 5, "name": "some epic contest", "state": "It's pretty cool"}]
+  ["dnd", {"type": 5, "name": "some epic contest", "state": "It's pretty cool"}],
+  ["online", {type: 5, name: "the presidential race", state: "DudeBot 2021 - A better way forward."}],
+  ["online", {type: 3, name: "the message counts go up"}],
+  ["online", {type: 0, name: "with fire", state: "It's probably safe, right?"}],
+  ["idle", {type: 3, name: "paint dry", state: "It's weirdly quite satisfying",  url: "https://www.youtube.com/watch?v=ZAqwbhoAp7Q"}],
+  ["online", {type: 1, name: "Gayleb Tunes", state: "The best series from DudeBot Multimedia Studios", url: "https://www.youtube.com/watch?v=Jza1ETFYyDU&list=PLNwjEafn9f4exDwOx_ez6_GPX5OKkuiXb"}],
+  ["dnd", {type: 5, name: "the great bot race", state: "Will DudeBot reclaim the gold trophy?"}],
+  ["online", {type: 2, name: "the hum of the server rack"}],
+  ["online", {type: 0, name: "cute cat videos", state: "http://catvids.thedude53.surge.sh"}]
 ]
