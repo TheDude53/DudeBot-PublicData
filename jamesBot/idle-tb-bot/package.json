@@ -1,0 +1,25 @@
+{
+  "name": "idle-tb-bot",
+  "version": "0.0.4",
+  "license": "MIT",
+  "author": {
+    "name": "TheDude53",
+    "email": "dudebot@cyberdude.com",
+    "url": "https://dudebot-official.glitch.me"
+  },
+  "homepage": "https://github.com/TheDude53/DudeBot-PublicData/tree/master/jamesBot/idle-tb-bot",
+  "main": "index.js",
+  "scripts": {
+    "build": "node node_modules/pkg/lib-es5/bin -t node12-windows-x64 -c package.json index.js",
+    "start": "node index.js"
+  },
+  "bin": "index.js",
+  "dependencies": {
+    "socket.io-client": "2.x",
+    "jsdom": "16.x"
+  },
+  "devDependencies": {
+    "pkg": "latest"
+  },
+  "private": true
+}

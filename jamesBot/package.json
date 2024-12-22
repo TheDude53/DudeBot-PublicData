@@ -1,0 +1,28 @@
+{
+  "name": "jamesbot",
+  "version": "0.4.7",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "TheDude53",
+      "email": "dudebot@cyberdude.com",
+      "url": "https://dudebot-official.glitch.me"
+    },
+    {"name": "james"}
+  ],
+  "homepage": "https://github.com/TheDude53/DudeBot-PublicData/tree/master/jamesBot",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i --force --prefix ./ && node node_modules/pkg/lib-es5/bin -t node12-windows-x64 -c package.json index.js",
+    "start": "node index.js"
+  },
+  "bin": "index.js",
+  "dependencies": {
+    "jsdom": "16.x",
+    "socket.io-client": "2.x"
+  },
+  "devDependencies": {
+    "pkg": "latest"
+  },
+  "private": true
+}
