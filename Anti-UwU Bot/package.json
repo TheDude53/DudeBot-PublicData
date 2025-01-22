@@ -1,0 +1,27 @@
+{
+  "name": "AntiUwUBot",
+  "description": "Does Nyan's job for them.",
+  "version": "2.0.0",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "ChromaNyan",
+      "url": "https://www.chromanyan.page"
+    },
+    {
+      "name": "TheDude53",
+      "email": "dudebot@cyberdude.com",
+      "url": "https://dudebot-official.glitch.me"
+    }
+  ],
+  "homepage": "https://github.com/TheDude53/DudeBot-PublicData/tree/master/Anti-UwU%20Bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "private": true
+}
